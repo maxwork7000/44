@@ -41,7 +41,7 @@ public class Firefox {
 	public static void main(String[] args) throws Exception {
 		Logger.getLogger("").setLevel(Level.OFF);
 		p.load(new FileInputStream("./input.properties"));
-		report = new FileWriter("./report_01.csv",false);
+		report = new FileWriter("./report_chrome.csv",false);
 		String driverPath = "";
 		if (System.getProperty("os.name").toUpperCase().contains("MAC"))
 			driverPath = "./resources/webdrivers/mac/geckodriver.sh";

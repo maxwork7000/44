@@ -27,7 +27,7 @@ public class HtmlUnit {
 	public static void main(String[] args) throws Exception {
 		Logger.getLogger("").setLevel(Level.OFF);
 		p.load(new FileInputStream("./input.properties"));
-		report = new FileWriter("./report_01.csv",false);
+		report = new FileWriter("./report_HtmlUnit.csv",false);
 		driver = new WebClient();
 		driver.setCssErrorHandler(new SilentCssErrorHandler());
 		driver.setJavaScriptErrorListener(new SilentJavaScriptErrorListener());
